@@ -58,8 +58,8 @@ class MainViewController: UIViewController {
 
     private func indexOfMessage(_ snapshot: DataSnapshot) -> Int {
         var index = 0
-        for  comment in self.items {
-            if snapshot.key == comment.key {
+        for  item in self.items {
+            if snapshot.key == item.key {
                 return index
             }
             index += 1

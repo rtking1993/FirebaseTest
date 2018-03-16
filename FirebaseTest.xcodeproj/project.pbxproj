@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		0728B215A18291E721EC2198 /* Pods_FirebaseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6ADE98162A95A1A61D0FB9 /* Pods_FirebaseTest.framework */; };
 		94F5B406205C1286000C5554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5B405205C1286000C5554 /* AppDelegate.swift */; };
-		94F5B408205C1286000C5554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5B407205C1286000C5554 /* ViewController.swift */; };
+		94F5B408205C1286000C5554 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5B407205C1286000C5554 /* MainViewController.swift */; };
 		94F5B40B205C1286000C5554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F5B409205C1286000C5554 /* Main.storyboard */; };
 		94F5B40D205C1286000C5554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F5B40C205C1286000C5554 /* Assets.xcassets */; };
 		94F5B410205C1286000C5554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F5B40E205C1286000C5554 /* LaunchScreen.storyboard */; };
+		94F5B418205C1B9D000C5554 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F5B417205C1B9D000C5554 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		7C6ADE98162A95A1A61D0FB9 /* Pods_FirebaseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F5B402205C1286000C5554 /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F5B405205C1286000C5554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94F5B407205C1286000C5554 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94F5B407205C1286000C5554 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		94F5B40A205C1286000C5554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94F5B40C205C1286000C5554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94F5B40F205C1286000C5554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94F5B411205C1286000C5554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F5B417205C1B9D000C5554 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				94F5B405205C1286000C5554 /* AppDelegate.swift */,
-				94F5B407205C1286000C5554 /* ViewController.swift */,
+				94F5B407205C1286000C5554 /* MainViewController.swift */,
 				94F5B409205C1286000C5554 /* Main.storyboard */,
 				94F5B40C205C1286000C5554 /* Assets.xcassets */,
 				94F5B40E205C1286000C5554 /* LaunchScreen.storyboard */,
 				94F5B411205C1286000C5554 /* Info.plist */,
+				94F5B417205C1B9D000C5554 /* GoogleService-Info.plist */,
 			);
 			path = FirebaseTest;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F5B410205C1286000C5554 /* LaunchScreen.storyboard in Resources */,
+				94F5B418205C1B9D000C5554 /* GoogleService-Info.plist in Resources */,
 				94F5B40D205C1286000C5554 /* Assets.xcassets in Resources */,
 				94F5B40B205C1286000C5554 /* Main.storyboard in Resources */,
 			);
@@ -221,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94F5B408205C1286000C5554 /* ViewController.swift in Sources */,
+				94F5B408205C1286000C5554 /* MainViewController.swift in Sources */,
 				94F5B406205C1286000C5554 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +368,7 @@
 				DEVELOPMENT_TEAM = TPQ9WQCL4P;
 				INFOPLIST_FILE = FirebaseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Gousto.FirebaseTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RTK.dynamiclists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +384,7 @@
 				DEVELOPMENT_TEAM = TPQ9WQCL4P;
 				INFOPLIST_FILE = FirebaseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Gousto.FirebaseTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RTK.dynamiclists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

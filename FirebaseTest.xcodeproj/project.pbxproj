@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0728B215A18291E721EC2198 /* Pods_FirebaseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6ADE98162A95A1A61D0FB9 /* Pods_FirebaseTest.framework */; };
+		94066692206D184400ED0B50 /* ItemsRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94066691206D184400ED0B50 /* ItemsRemote.swift */; };
+		9448829E206D14B200DCBCD5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9448829D206D14B200DCBCD5 /* Item.swift */; };
 		94F5B406205C1286000C5554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5B405205C1286000C5554 /* AppDelegate.swift */; };
 		94F5B408205C1286000C5554 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5B407205C1286000C5554 /* MainViewController.swift */; };
 		94F5B40B205C1286000C5554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F5B409205C1286000C5554 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		3D6F59E2D0C4CFA039E90A97 /* Pods-FirebaseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.debug.xcconfig"; sourceTree = "<group>"; };
 		79EB05EB26EE818E26AF6484 /* Pods-FirebaseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.release.xcconfig"; sourceTree = "<group>"; };
 		7C6ADE98162A95A1A61D0FB9 /* Pods_FirebaseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94066691206D184400ED0B50 /* ItemsRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsRemote.swift; sourceTree = "<group>"; };
+		9448829D206D14B200DCBCD5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		94F5B402205C1286000C5554 /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F5B405205C1286000C5554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F5B407205C1286000C5554 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +46,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9448829F206D151A00DCBCD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9448829D206D14B200DCBCD5 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		944882A0206D152100DCBCD5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94066691206D184400ED0B50 /* ItemsRemote.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		944882A1206D152600DCBCD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94F5B407205C1286000C5554 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		94F5B3F9205C1286000C5554 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				94F5B405205C1286000C5554 /* AppDelegate.swift */,
-				94F5B407205C1286000C5554 /* MainViewController.swift */,
+				944882A1206D152600DCBCD5 /* Controller */,
+				944882A0206D152100DCBCD5 /* Network */,
+				9448829F206D151A00DCBCD5 /* Model */,
 				94F5B409205C1286000C5554 /* Main.storyboard */,
-				94F5B40C205C1286000C5554 /* Assets.xcassets */,
 				94F5B40E205C1286000C5554 /* LaunchScreen.storyboard */,
+				94F5B40C205C1286000C5554 /* Assets.xcassets */,
 				94F5B411205C1286000C5554 /* Info.plist */,
 				94F5B417205C1B9D000C5554 /* GoogleService-Info.plist */,
 			);
@@ -226,6 +256,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F5B408205C1286000C5554 /* MainViewController.swift in Sources */,
+				9448829E206D14B200DCBCD5 /* Item.swift in Sources */,
+				94066692206D184400ED0B50 /* ItemsRemote.swift in Sources */,
 				94F5B406205C1286000C5554 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -37,6 +37,8 @@ struct Item {
         ref = snapshot.ref
     }
 
+    // MARK: Helper Methods
+
     func toAnyObject() -> Any {
         return [
             ItemParameters.item.rawValue: item

@@ -1,7 +1,5 @@
 // MARK: Frameworks
 
-// MARK: Frameworks
-
 import Foundation
 import FirebaseDatabase
 

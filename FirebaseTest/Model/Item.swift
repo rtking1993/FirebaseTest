@@ -1,3 +1,5 @@
+// MARK: Frameworks
+
 import FirebaseDatabase
 
 // MARK: Item
@@ -33,7 +35,6 @@ struct Item {
         }
 
         self.item = item
-
         ref = snapshot.ref
     }
 
